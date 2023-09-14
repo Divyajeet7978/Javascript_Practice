@@ -85,7 +85,7 @@ for (var i = 0; i < 5; i += 1) {
   console.log("Divyajeet")
 }
 
-homework: star pattern
+// homework: star pattern
 for (var i = 0; i < 15; i += 1) {
   console.log ("*".repeat(i))
 }
