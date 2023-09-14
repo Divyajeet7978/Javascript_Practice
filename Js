@@ -1,0 +1,91 @@
+// --> ex01: output your name
+console.log ("Divyajeet Panda")
+
+// --> ex02: read the name of your user
+var readlineSync =  require('readline-sync');
+var userName = readlineSync.question('What is your Name ? \n');
+
+// --> ex03: welcome your user
+var welcomeMessage = "Welcome ! Divyajeet";
+console.log (welcomeMessage);
+
+// --> ex04: do it all together
+var readlineSync =  require('readline-sync');
+var userName = readlineSync.question('What is your Name ? \n');
+var welcomeMessage = "Welcome ! " + userName;
+console.log (welcomeMessage);
+
+// --> ex05: print right/wrong if greater than 25
+var score = 0;
+var readlineSync = require('readline-sync');
+var answer = readlineSync.question('Am I older than 21 ? \n');
+console.log("You entered " + userAnswer);
+if (answer === "yes") {
+  console.log("You are right ! ");
+  score += 1;
+  console.log("Your score is : " + score);
+  console.log("\n")
+} else {
+  console.log("You are wrong ! ");
+  score -= 1;
+  console.log("Your score is : " + score);
+  console.log("\n")
+}
+
+// ex06: increment score if the right answer
+var readlineSync = require('readline-sync');
+var cityName = readlineSync.question('What is my hometown ? \n');
+console.log("Your Answer - " + cityName);
+if (cityName === "kendrapara") {
+  console.log("You are right !");
+  score += 1;
+  console.log("Your score is : " + score);
+} else {
+  console.log("You are wrong !")
+  score -= 1;
+  console.log("Your score is : " + score);
+}
+
+// ex07: function to add two numbers
+function add (numberOne, numberTwo) {
+  var output = numberOne + numberTwo;
+  return output;
+}
+var result = add(22,46);
+console.log ("The sum of 22 and 46 is " + result);
+
+// ex08: function to check the answer
+var readlineSync = require("readline-sync");
+
+var score = 0;
+
+function qna (question, answer) {
+  var userAnswer = readlineSync.question(question);
+  if (userAnswer === answer) 
+  {
+    console.log ("You are right !");
+    score +=1;
+    console.log ("Your score is " + score);
+    console.log ("\n");
+  } else {
+    console.log ("You are wrong !");
+    score -= 1;
+    console.log ("Your score is " + score);
+    console.log ("\n");
+  }
+}
+
+qna ("What is the capital of India ? \n", "delhi");
+qna ("In which state Kolkata is situated ? \n", "west bengal");
+qna ("who is the writer of ONE PIECE ? \n", "eichiro oda");
+qna ("what is the latest windows version ? \n", "11");
+
+// ex09: print your name 5 times
+for (var i = 0; i < 5; i += 1) {
+  console.log("Divyajeet")
+}
+
+homework: star pattern
+for (var i = 0; i < 15; i += 1) {
+  console.log ("*".repeat(i))
+}
